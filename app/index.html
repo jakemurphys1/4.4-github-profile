@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 4 github profile</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+<div class="row header">
+  <img src="images/icon.png"/>
+  <input type="text" class="searchForm">
+  <span>Pull Requests</span>
+  <span>Issues</span>
+  <span>Gist</span>
+</div>
+<div class="row body">
+<div class="col-md-3 profile">
+
+
+</div>
+<div class="col-md-8 information">
+  <div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Contributions</a></li>
+      <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Repository</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Public Activity</a></li>
+    </ul>
+<div class="edit"><span>Edit Profile</span></div>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="searching">
+        <input type="text" class="searchForm" placeholder="Find a Repository...">
+      <button type="button" class="btn btn-default">Search</button>
+      <a>All</a>
+        <a>Public</a>
+          <a>Private</a>
+            <a>Sources</a>
+              <a>Forks</a>
+                <a>Mirrors</a>
+                <div class="New"><span>New</span></div>
+  </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="profile">1</div>
+      <div role="tabpanel" class="tab-pane" id="messages">2</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<row class="footer">
+
+  <div class="left"><span>(C)2016 Githu, Inc.</span><a href="">Terms</a><a href="">Privacy</a><a href="">Security</a><a href="">Contact</a><a href="">Help</a></div>
+  <img src="images/icon.png"/>
+  <div class="right"><a href="">Status</a><a href="">API</a><a href="">Training</a><a href="">Shop</a><a href="">Blog</a><a href="">About</a>  <a href="">Pricing</a></div>
+
+</row>
+    </div>
+
+
+    <script id="NewItem-template" type="text/x-handlebars-template">
+      <img src={{image}}>
+      <p id="name">{{name}}</p>
+      <p id="username">{{username}}</p>
+      <div id="other-info">
+      <p>Join on {{joindate}}</p></div>
+      <div class="followers">
+        <div><div class="number"><span>{{followers}}</span></div><p>Followers</p></div>
+        <div><div class="number"><span>{{starred}}</span></div><p>Starred</p></div>
+        <div><div class="number"><span>{{following}}</span></div><p>Following</p></div>
+      </div>
+    </script>
+
+    <script id="Repository-tab" type="text/x-handlebars-template">
+<div class="row entry">
+  <div class="leftside">
+  <span>{{name}}</span>
+  <p>Updated {{updated}}</p></div>
+  <div class="rightside"><span>HTML</span><span>{{stargazers}}</span><span>{{forks}}</span></div>
+</div>
+    </script>
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
