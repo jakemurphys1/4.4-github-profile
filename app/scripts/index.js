@@ -17,7 +17,6 @@ if(typeof(githubtoken) !== "undefined"){
   });
 }
 
-
 $.ajax("https://api.github.com/users/jakemurphys1").then(profile);
 
 function profile(data){
